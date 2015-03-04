@@ -71,6 +71,7 @@ module.exports = function(grunt) {
         algorithm: 'md5',
         length: 16,
         baseDir: '_site',
+        enableUrlFragmentHint: true,
         rename: true
       },
       assets: {
