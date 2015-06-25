@@ -14,7 +14,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "jshint-stylish": "^0.4.0"
   },
-  "description": "replaces jekyll asset generation with grunt tools",
+  "description": "replaces jekyll asset generation with grunt alternatives",
   "main": "index.html",
   "dependencies": {
     "grunt": "^0.4.5"
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:jqgorelick/jekyll-grunt-scaffold.git"
+    "url": "git@github.com:jqgorelick/jekyll-grunt-scaffolding.git"
   },
   "author": "jqgorelick",
   "license": "ISC"

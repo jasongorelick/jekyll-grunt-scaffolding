@@ -13,5 +13,10 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: ['node_modules', 'Gruntfile.js', 'package.json', 'config.rb']
+exclude: ['node_modules',
+          'Gruntfile.js',
+          'package.json',
+          'config.rb'
+         ]
+
 keep_files: ['css', 'js']
