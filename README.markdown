@@ -1,28 +1,35 @@
+## This repository is not actively maintained.
+
+--------
+
 # Jekyll-Grunt Static Site Authoring
 
-## Requirements
+## Prerequisites
 
-* [Jekyll](http://jekyllrb.com/)
-* [NodeJS](https://nodejs.org/) + npm
-* HTTP Server of your choice
+- This project requires [node.js](https://nodejs.org/en/) and [ruby](https://www.ruby-lang.org/en/). Versions are specified in the package.json and Gemfile respectively.
+- The site that is generated can be deployed to any host that supports static asset serving.
 
-## Initial Setup
-* Run `npm install` in the project directory, and you're ready to go!
+## Setup
+ 
+1. Run `bundle install`
+2. Run `npm install`
 
-## Development Setup
+**Config options:**
 
-* In the project root, run `python -m SimpleHTTPServer 2345` (or your HTTP server of choice)
-* Run `grunt watch:js` and `grunt watch:css` for persistant asset creation
-* Run `jekyll build --watch` for persistant site regeneration on save.
+By default, package.json contains a config var for the jekyll config file (defaults to _config.yml). See [npm docs](https://docs.npmjs.com/misc/config#per-package-config-settings) for more details on updating package.json configs.
+
+## Development
+
+Run `npm run dev` to run jekyll server and watch CSS and JS asset changes and building.
 
 ## Deploying
 
-1. `$ grunt prepare`
-2. `$ jekyll build --config <name_of_your_production_config_file>`
-3. You're ready to deploy!
+1. Run `npm run build`
+2. Deploy `_site` or your custom dist folder!
 
 ## Author
-jekyll-grunt-scaffold is maintained by Jason Gorelick (@jqgorelick)
+
+jekyll-grunt-scaffold was assembled by Jason Gorelick (@jqgorelick).
 
 ## License
-Copyright (c) 2014-2015 Jason Gorelick. Released under an [MIT License](LICENSE.markdown).
+Copyright (c) 2014-2016 Jason Gorelick. Released under an [MIT License](LICENSE.markdown).

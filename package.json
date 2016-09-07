@@ -1,6 +1,10 @@
 {
   "name": "jekyll-grunt-scaffold",
-  "version": "0.1.0",
+  "description": "replaces jekyll asset generation with grunt alternatives",
+  "version": "0.1.1",
+  "engines": {
+    "node": ">=4.1.1"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^1.0.0",
@@ -14,13 +18,15 @@
     "grunt-contrib-watch": "^0.6.1",
     "jshint-stylish": "^0.4.0"
   },
-  "description": "replaces jekyll asset generation with grunt alternatives",
   "main": "index.html",
-  "dependencies": {
-    "grunt": "^0.4.5"
+  "dependencies": {},
+  "config": {
+    "jekyll": "_config.yml"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "jekyll serve --config $npm_package_config_jekyll & grunt watch:css & grunt watch:js",
+    "build": "grunt prepare && jekyll build --config $npm_package_config_jekyll"
   },
   "repository": {
     "type": "git",
